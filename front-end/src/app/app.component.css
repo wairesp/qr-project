@@ -1,72 +1,22 @@
-element.style {
-    background-color: #c2d1ff;
-}
+/* Selectors are patterns that match one or more elements in an HTML document.
+ They are used to apply style rules to those elements.
+  There are different types of selectors, such as: */
 
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 12px; 
-}
-
-
-.dog-photo {
-    width: 100px;
-    height: 100px;
-}
-
-.py-6 {
-    padding: 90px 0;
-}
+/* selectors  */
 
 section {
     display: block;
 }
-
-/* TEXTO TITULO Y DESCRIPCION */
-.text-center-1 {
-    text-align: left!important;
-}
-/* TEXTO BOTON */
-.text-center-0 {
-    text-align: center!important;
+.py-6 {
+    padding: 45px 0;
 }
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-
-.col-md-6 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-
-.col-md-3 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 25%;
-}
-
-.mb-3, .my-3 {
-    margin-bottom: 1rem!important;
-}
-
-.mb-4, .my-4 {
-    margin-bottom: 1.5rem!important;
+body { margin: 0px; 
+      padding: 0px; /* Remove body margins / padding: 0; / Remove body padding */
+      outline: 5px dotted red;
 } 
 
+.row { outline: 5px dotted red; }
 .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -76,6 +26,45 @@ body {
     margin-right: -15px;
     margin-left: -15px;
 }
+
+.col-md-12  {outline: 5px dotted red; }
+.col-md-6  {outline: 5px dotted green;}
+.col-md-3 {outline: 5px dotted pink}
+
+.col-sm-6, .col-md-6{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    vertical-align: middle; /*Aligns Inside its parent element*/
+}
+
+.col-sm-3, .col-md-3{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    outline: 3px dotted magenta;
+    position: relative;
+    width: 100%;
+    min-height: 1px;;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+/*bottom margin TEXT*/
+.mb-3, .my-3, .sm-3 {
+    margin-bottom: 1rem!important;
+}
+
+.mb-4, .my-4, .sm-4 {
+    margin-bottom: 1.5rem!important;
+} 
+
 
 .img-fluid {
     max-width: 100%;
@@ -88,6 +77,71 @@ img {
     border-style: none;
     overflow: clip;
 }
+canvas {
+    max-width: auto;
+    max-height: 100%;
+    overflow-clip-margin: content-box;
+    vertical-align: middle;
+    border-style: none;
+    overflow: clip;
+}
+
+
+
+/* style declaration */
+element.style {
+    background-color: #c2d1ff;
+}
+
+.button {
+    /*background-color: #4CAF50;*/ /* Green */
+    background-color: #8EACCD; /*blueish*/
+    border: none;
+    color: white;
+    padding: 16px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 450;
+    border-radius: 8px; 
+    align-items: center;
+    vertical-align: middle;
+    display: flex !important;
+    margin: auto !important;
+    width: max-content;
+    cursor: pointer;
+}
+
+
+.dog-photo {
+    width: 100px;
+    height: 100px;
+}
+
+
+
+/* TEXTO TITULO Y DESCRIPCION */
+.text-center-1 {
+    text-align: left!important;
+}
+/* TEXTO BOTON */
+.text-center-0 {
+    text-align: center!important;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 
+    "Segoe UI", Roboto, 
+    "Helvetica Neue",
+    Arial, sans-serif, 
+    "Apple Color Emoji", 
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
 
 .my-text-box {
     max-width: 100%;
@@ -99,12 +153,14 @@ img {
 }
 
 
-.photo_logo_qr_card {
-    margin-bottom: 30px;
-    padding: 30px;
+/*used to be 30*/
+.photo_qr_card {
+    margin-bottom: 15px;
+    padding: 15px;
     background: #fff;
     border-radius: 12px;
 }
+
 
 a {
     color: #007bff;
@@ -120,8 +176,9 @@ a {
     font-weight: 500;
     line-height: 1.2;
     color: inherit;
-    font-size: 2.25rem;
+    font-size: 2.45rem;
     font-weight: 1000;
+    text-align: center;
 }
 
 .h4, h4 {
@@ -134,14 +191,9 @@ a {
     font-size: 20px;
     font-weight: 500;
     color: #76839c;
+    text-align: center;
 }
 
-.photo_logo_qr_card {
-    margin-bottom: 30px;
-    padding: 30px;
-    background: #fff;
-    border-radius: 12px;
-}
 
 section {
     display: flex;
@@ -159,11 +211,4 @@ section {
     margin-left: auto;
 }
 
-.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
 
