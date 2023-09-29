@@ -6,7 +6,7 @@ import {
   NgxScannerQrcodeComponent,
   ScannerQRCodeSelectedFiles,
 } from 'ngx-scanner-qrcode';
-
+import * as data from './data.json';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +16,9 @@ import {
 
 export class AppComponent implements AfterViewInit {
   title = "DieLess";
-  
+  public dogData: any = (data as any).default;
+  public selectedDog: any;
+
   // https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia#front_and_back_camera
   public config: ScannerQRCodeConfig = {
     constraints: {
@@ -43,7 +45,7 @@ export class AppComponent implements AfterViewInit {
     fps:30,
     src:'../assets/cat1.jpg'
   };
-  public isScanned = false;
+  
   //holds results
   public qrCodeResult: ScannerQRCodeSelectedFiles[] = [];
   public qrCodeResult2: ScannerQRCodeSelectedFiles[] = [];
@@ -64,8 +66,21 @@ export class AppComponent implements AfterViewInit {
   //when a event is emited to the scanner logs it into the console
   //the line above console pauses once it gets a qr
   public onEvent(e: ScannerQRCodeResult[], action?: any): void {
-    e && action && action.pause();
-    console.log(e);
+    if (e && action) {
+      action.pause();
+      console.log(e); // This logs the scanned QR code data to the console
+  
+      // Convert the Int8Array to a string
+      let decoder = new TextDecoder();
+      let id = decoder.decode(new Uint8Array(e[0].data));
+      console.log(id); // This logs the ID to the console
+
+      // Find the dog data associated with the scanned ID
+      this.selectedDog = this.dogData.find((dog: any) => dog.id === id);
+
+      // Log the selected dog data to the console
+      console.log(this.selectedDog);
+    }
   }
 
   //USED TO START STOP PLAY OR PAUSE THE SCANNER

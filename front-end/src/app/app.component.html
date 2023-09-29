@@ -13,20 +13,19 @@
                 obtener información detallada sobre la vacunación de su perro.
               </h4>
 
-              <div class="col-sm-12 photo_qr_card">
+              <div class="col-sm-12 photo_qr_card" [hidden]="action.isPause">
                 <!-- <img src="..\assets\cat1.jpg" alt="cat1" class="img-fluid" /> -->
                 <ngx-scanner-qrcode
                   #action="scanner"
                   [config]="config"
                   (event)="onEvent($event, action)"
                 ></ngx-scanner-qrcode>
-          
+
                 <!-- data  -->
                 <!-- <p class="data">{{ (action.data | async | json) }}</p> -->
-          
+
                 <!-- loading -->
                 <p *ngIf="action.isLoading">⌛ Loading...</p>
-             
               </div>
             </div>
 
@@ -39,8 +38,35 @@
                   [disabled]="action.isLoading"
                   (click)="handleStartOrUnpause(action)"
                 >
-                <span> ¡Escanear OTRO Codigo!</span>
+                  <span> ¡Escanear OTRO Codigo!</span>
                 </button>
+              </div>
+            </div>
+
+            <div class="card" *ngIf="selectedDog">
+              <div class="card-body">
+                <h2 class="card-title">{{ selectedDog.nombreDelPerro }}</h2>
+                <img
+                  [src]="selectedDog.imageUrl"
+                  alt="Dog image"
+                  class="img-fluid"
+                />
+                <p class="card-text">
+                  <strong>Descripción:</strong>
+                  {{ selectedDog.descripcionDelPerro.color }},
+                  {{ selectedDog.descripcionDelPerro.tamano }}<br />
+                  <strong>Edad:</strong>
+                  {{ selectedDog.edadAnosdelPerro }} years<br />
+                  <strong>Raza:</strong> {{ selectedDog.raza }}<br />
+                  <strong>Fecha de Última Atención:</strong>
+                  {{ selectedDog.fechaDeUltimaAtencion }}<br />
+                  <strong>Género:</strong> {{ selectedDog.genero }}<br />
+                  <strong>Esterilización:</strong>
+                  {{ selectedDog.esterilizacion }}<br />
+                  <strong>Dueño:</strong> {{ selectedDog.nombreDueno }}<br />
+                  <strong>Contacto:</strong>
+                  {{ selectedDog.numeroDeTelefonoDelDueno }}
+                </p>
               </div>
             </div>
           </div>

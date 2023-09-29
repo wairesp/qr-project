@@ -1,0 +1,51 @@
+[
+    {
+      "id": "ID-DOG-001",
+      "nombreDelPerro": "Pimienta",
+      "imageUrl": "../assets/pimi.jpg",
+      "descripcionDelPerro": {
+        "color": "Negro",
+        "tamano": "Pequeño"
+      },
+      "edadAnosdelPerro": 5,
+      "raza": "Poodle mestizo",
+      "fechaDeUltimaAtencion": "2023-09-29",
+      "genero": "Macho",
+      "esterilizacion": "Sí",
+      "nombreDueno": "Juan Pérez",
+      "numeroDeTelefonoDelDueno": "+51 987654321"
+    },
+    {
+      "id": "ID-DOG-002",
+      "nombreDelPerro": "Rex",
+      "imageUrl": "../assets/DSC00016.JPG",
+      "descripcionDelPerro": {
+        "color": "Marrón",
+        "tamano": "Grande"
+      },
+      "edadAnosdelPerro": 7,
+      "raza": "Labrador mestizo",
+      "fechaDeUltimaAtencion": "2023-10-01",
+      "genero": "Macho",
+      "esterilizacion": "No",
+      "nombreDueno": "Maria González",
+      "numeroDeTelefonoDelDueno": "+51 987654322"
+    },
+    {
+      "id": "ID-DOG-003",
+      "nombreDelPerro": "Luna",
+      "imageUrl": "../assets/dog1.jpg",
+      "descripcionDelPerro": {
+        "color": "Blanco",
+        "tamano": "Pequeño"
+      },
+      "edadAnosdelPerro": 2,
+      "raza": "Chihuahua mestizo",
+      "fechaDeUltimaAtencion": "2023-10-02",
+      "genero": "Hembra",
+      "esterilizacion": "Sí",
+      "nombreDueno": "Carlos Rodríguez",
+      "numeroDeTelefonoDelDueno": "+51 987654323"
+    }
+  ]
+  
