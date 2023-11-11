@@ -2,7 +2,7 @@
     {
       "id": "ID-DOG-001",
       "nombreDelPerro": "Pimienta",
-      "imageUrl": "https://github.com/wairesp/qr-project/blob/main/front-end/src/assets/pimi.jpg?raw=true",
+      "imageUrl": "../assets/pimi.jpg",
       "descripcionDelPerro": {
         "color": "Negro",
         "tamano": "Pequeño"
@@ -40,7 +40,7 @@
     {
       "id": "ID-DOG-002",
       "nombreDelPerro": "Rex",
-      "imageUrl": "https://github.com/wairesp/qr-project/blob/main/front-end/src/assets/DSC00016.JPG?raw=true",
+      "imageUrl": "../assets/DSC00016.JPG",
       "descripcionDelPerro": {
         "color": "Marrón",
         "tamano": "Pequeño"
@@ -83,7 +83,7 @@
     {
       "id": "ID-DOG-003",
       "nombreDelPerro": "Luna",
-      "imageUrl": "https://github.com/wairesp/qr-project/blob/main/front-end/src/assets/dog1.jpg?raw=true",
+      "imageUrl": "../assets/dog1.jpg",
       "descripcionDelPerro": {
         "color": "Blanco",
         "tamano": "Pequeño"
