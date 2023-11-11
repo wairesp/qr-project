@@ -67,6 +67,30 @@
                   <strong>Contacto:</strong>
                   {{ selectedDog.numeroDeTelefonoDelDueno }}
                 </p>
+
+                <div class="card-text text-center">
+                  <strong>Cartilla de Vacunación:</strong>
+                </div>
+                <div class="card-text table-responsive">
+                  <table class="table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th>Nombre de la Vacuna</th>
+                        <th>Fecha</th>
+                        <th>Próxima Fecha</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let vacuna of selectedDog.cartillaDeVacunacion">
+                        <td>{{ vacuna.nombreVacuna }}</td>
+                        <td>{{ vacuna.fecha }}</td>
+                        <td>{{ vacuna.proximaFecha }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                
+                
               </div>
             </div>
           </div>

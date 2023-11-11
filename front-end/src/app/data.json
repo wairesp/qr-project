@@ -2,50 +2,126 @@
     {
       "id": "ID-DOG-001",
       "nombreDelPerro": "Pimienta",
-      "imageUrl": "../assets/pimi.jpg",
+      "imageUrl": "https://github.com/wairesp/qr-project/blob/main/front-end/src/assets/pimi.jpg?raw=true",
       "descripcionDelPerro": {
         "color": "Negro",
         "tamano": "Pequeño"
       },
-      "edadAnosdelPerro": 5,
-      "raza": "Poodle mestizo",
-      "fechaDeUltimaAtencion": "2023-09-29",
-      "genero": "Macho",
+      "edadAnosdelPerro": 9,
+      "raza": "Schnauzer Mestizo",
+      "fechaDeUltimaAtencion": "29-09-2023",
+      "genero": "Hembra",
       "esterilizacion": "Sí",
-      "nombreDueno": "Juan Pérez",
-      "numeroDeTelefonoDelDueno": "+51 987654321"
+      "nombreDueno": "Eduardo Pérez",
+      "numeroDeTelefonoDelDueno": "+51 987654321",
+      "cartillaDeVacunacion": [
+        {
+          "nombreVacuna": "Rabia",
+          "fecha": "15/01/23",
+          "proximaFecha": "15/01/24"
+        },
+        {
+          "nombreVacuna": "Parvovirus",
+          "fecha": "20/02/23",
+          "proximaFecha": "20/02/24"
+        },
+        {
+          "nombreVacuna": "Distemper",
+          "fecha": "30/03/23",
+          "proximaFecha": "30/03/24"
+        },
+        {
+          "nombreVacuna": "Hepatitis",
+          "fecha": "15/04/23",
+          "proximaFecha": "15/04/23"
+        }
+      ]
     },
     {
       "id": "ID-DOG-002",
       "nombreDelPerro": "Rex",
-      "imageUrl": "../assets/DSC00016.JPG",
+      "imageUrl": "https://github.com/wairesp/qr-project/blob/main/front-end/src/assets/DSC00016.JPG?raw=true",
       "descripcionDelPerro": {
         "color": "Marrón",
-        "tamano": "Grande"
+        "tamano": "Pequeño"
       },
-      "edadAnosdelPerro": 7,
-      "raza": "Labrador mestizo",
-      "fechaDeUltimaAtencion": "2023-10-01",
+      "edadAnosdelPerro": 1,
+      "raza": "Cocker Spaniel",
+      "fechaDeUltimaAtencion": "10-01-2023",
       "genero": "Macho",
       "esterilizacion": "No",
       "nombreDueno": "Maria González",
-      "numeroDeTelefonoDelDueno": "+51 987654322"
+      "numeroDeTelefonoDelDueno": "+51 987654322",
+      "cartillaDeVacunacion": [
+        {
+          "nombreVacuna": "Rabia",
+          "fecha": "15/01/23",
+          "proximaFecha": "15/01/24"
+        },
+        {
+          "nombreVacuna": "Parvovirus",
+          "fecha": "20/02/23",
+          "proximaFecha": "20/02/24"
+        },
+        {
+          "nombreVacuna": "Distemper",
+          "fecha": "30/03/23",
+          "proximaFecha": "30/03/24"
+        },
+        {
+          "nombreVacuna": "Hepatitis",
+          "fecha": "15/04/23",
+          "proximaFecha": "15/04/24"
+        },
+        {
+          "nombreVacuna": "Leptospirosis",
+          "fecha": "15/05/23",
+          "proximaFecha": "15/05/24"
+        }
+      ]      
     },
     {
       "id": "ID-DOG-003",
       "nombreDelPerro": "Luna",
-      "imageUrl": "../assets/dog1.jpg",
+      "imageUrl": "https://github.com/wairesp/qr-project/blob/main/front-end/src/assets/dog1.jpg?raw=true",
       "descripcionDelPerro": {
         "color": "Blanco",
         "tamano": "Pequeño"
       },
       "edadAnosdelPerro": 2,
-      "raza": "Chihuahua mestizo",
-      "fechaDeUltimaAtencion": "2023-10-02",
+      "raza": "Chihuahua",
+      "fechaDeUltimaAtencion": "02-10-2023",
       "genero": "Hembra",
       "esterilizacion": "Sí",
       "nombreDueno": "Carlos Rodríguez",
-      "numeroDeTelefonoDelDueno": "+51 987654323"
+      "numeroDeTelefonoDelDueno": "+51 987654323",
+      "cartillaDeVacunacion": [
+        {
+          "nombreVacuna": "Rabia",
+          "fecha": "15/01/23",
+          "proximaFecha": "15/01/24"
+        },
+        {
+          "nombreVacuna": "Parvovirus",
+          "fecha": "20/02/23",
+          "proximaFecha": "20/02/24"
+        },
+        {
+          "nombreVacuna": "Distemper",
+          "fecha": "30/03/23",
+          "proximaFecha": "30/03/24"
+        },
+        {
+          "nombreVacuna": "Hepatitis",
+          "fecha": "15/04/23",
+          "proximaFecha": "15/04/24"
+        },
+        {
+          "nombreVacuna": "Parainfluenza",
+          "fecha": "15/05/23",
+          "proximaFecha": "15/05/24"
+        }
+      ]      
     }
   ]
   

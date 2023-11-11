@@ -43,7 +43,7 @@ export class AppComponent implements AfterViewInit {
     ],
     isBeep: false,
     fps:30,
-    src:'../assets/cat1.jpg'
+    src:'https://github.com/wairesp/qr-project/blob/main/front-end/src/assets/cat1.jpg?raw=true'
   };
   
   //holds results
